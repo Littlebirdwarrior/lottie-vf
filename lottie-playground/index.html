@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+</head>
+<body>
+  <script type="module" src="src/script.js"></script>
+  <div class="bg-indigo-700 p-4 flex justify-between items-center">
+    <div class="flex items-center">
+      <img src="https://cdn2.iconfinder.com/data/icons/icontober/64/Inkcontober_Trail-256.png" alt="logo" width="50" class="mr-2">
+      <a href="#" class="inline-block p-2 text-indigo-200 mr-2 hover:text-indigo-100">Home</a>
+      <a href="#" class="inline-block p-2 text-indigo-200 hover:text-indigo-100">About</a>
+    </div>
+    <div>
+      <a href="#" class="inline-block p-2 text-indigo-200 hover:text-indigo-100">Login</a>
+      <a href="#" class="inline-block px-4 py-2 rounded text-yellow-700 bg-yellow-400 hover:bg-yellow-300 hover:text-yellow-800 transition ease-in duration-150">Signup</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="md:flex justify-between py-20 px-10 gap-x-5 bg-indigo-600 to-90% text-indigo-100">
+    <div class="md:w-1/2 mb-10 md:mb-0">
+      <h2 class="text-2xl md:text-4xl lg:text-6xl text-white mb-6 text-center md:text-left">Bienvenue à City!</h2>
+      <p class="mb-6 text-center md:text-left">There is never a sad day here.</p>
+      <a href="#" class="inline-block py-2 px-5 text-lg bg-gray-400 rounded text-gray-800 hover:bg-gray-200 mr-2">Librairie</a>
+      <a href="#" class="inline-block py-2 px-5 text-lg bg-yellow-500 text-yellow-800 rounded hover:bg-yellow-300">Docs</a>
+    </div>
+    <!-- -Lottie 1 : .json importé depuis un cdn avec une librairie distante-->
+    <div class="md:w-1/2 bg-gradient-to-r from-indigo-900 to-indigo-700 border-indigo-400 rounded-2xl flex justify-center">
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+      <dotlottie-player src="https://lottie.host/d1d6325d-52a0-493c-96db-c76919f0f626/MypUatsKvp.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </div>
+
+  </div>
+
+  <!-- FEATURES -->
+
+  <section class=" bg-indigo-800 text-indigo-200 pt-5">
+    <h2 class="text-2xl md:text-3xl lg:text-5xl text-white text-center">Différente manière d'être intégrée</h2>
+    <div class="flex py-16 px-10 text-center gap-x-2">
+      <!---Lottie 2 : integré avec un .json-->
+      <div>
+        <div class="w-full rounded-2xl mb-4 mt-8">
+          <canvas id="canvas-2" style="width: 300px; height:300px;"></canvas>
+        </div>
+        <p>.json x node-module</p>
+      </div>
+
+      <!---Lottie 3 : intégré avec un .lottie-->
+      <div>
+        <div class="w-full rounded-2xl mb-4 mt-8 ">
+          <canvas id="canvas-3" style="width: 300px; height:300px;"></canvas>
+        </div>
+        <p>.lottie x node_module</p>
+      </div>
+
+      <!---Lottie 5 : intégré avec un .lottie -->
+      <div>
+        <div class="w-full rounded-2xl mb-4 mt-8">
+          <dotlottie-wc src="lotties/lottiefile/lottie5.lottie" style="width: 300px; height:300px; background-color: coral;" autoplay loop></dotlottie-wc>
+        </div>
+        <p>.lottie x webcomponant</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FEATURES -->
+  <div class="flex content-center py-16 px-10 bg-indigo-700 text-indigo-200 text-center gap-x-2">
+    <!---Lottie 4 : integré avec un .json-->
+    <div class=" w-full">
+        <canvas id="canvas-4" style="width: 300px; height:300px;"></canvas>
+    </div>
+    <div class="w-full">
+      <h2>Avantages</h2>
+      <ul>
+        <li>S'adapte au contenu</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+
+  <div class="p-10 bg-indigo-900 text-indigo-400 flex justify-between gap-x-8 items-center">
+    <div class="md:w-1/2">
+      <h3 class="text-lg mb-2">Join the Newsletter</h3>
+      <form action="#" class="flex">
+        <input type="email" name="" id="" class="w-full rounded-l py-3 px-4 outline-none focus:bg-indigo-200 " >
+        <button class="bg-red-300 hover:bg-red-400 text-red-800 rounded-r py-1 px-4">Join</button>
+      </form>
+    </div>
+    <!---Lottie 6: integré avec un .json-->
+    <div class="">
+      <canvas id="canvas-6" style="width: 200px; height:200px;"></canvas>
+    </div>
+    <div class="flex items-center">
+      Copyright &copy; Doggos 2021 - Infinity
+    </div>
+  </div>
+</body>
+</html>
